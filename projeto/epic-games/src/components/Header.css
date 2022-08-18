@@ -1,9 +1,7 @@
 html,
 body {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
 }
 
 .container {
@@ -11,8 +9,6 @@ body {
 }
 
 .header-container {
-    min-height: 100%;
-    min-width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/gow-background.jpg);
     background-repeat: no-repeat;
     background-color: black;
@@ -109,53 +105,69 @@ hr {
     font-family: Verdana;
 }
 
+
+
+
 @media (max-width: 1200px) {
 
     .header-container {
         margin: 0;
         padding: 0;
+        width: 100vh;
+        height: 100vh;
     }
 
     .container {
-        margin:0 auto;
+        margin: 0 auto;
     }
 
     .epicGamesLogo {
-        left: 10%;
+        left: 5vh;
         position: fixed;
     }
+
+    /* .button just works in desktop resolution*/
 
     .buttons {
         display: none;
     }
 
     .right-container {
-        right: 10%;
-        position: fixed;
+        right: 55vh;
         height: 4.5em;
+        position: fixed;
     }
 
     .download-epic-button {
         display: none;
     }
 
-    .gow-content {
-        top: 50%;
-        left: 50%;
-    }
+    /* GOD OF WAR CONTENT*/
 
-    .gow-content-description {
+    .gow-content {
+        justify-content: center;
         align-items: center;
     }
 
-    .gow-content-description label {
-        padding: 0;
-        margin: 0;
-        color: #dbdbdb;
+
+    /* DIV WISHLIST OR BUY*/
+
+    .buy-wishlist-container {
+        width: 100%;
     }
 
-    .gow-logo-image {
-        padding: 0;
-        margin: 0;
+    .buy-wishlist-container div {
+        display: inline-block;
+    }
+
+    .buy-wishlist-container img{
+        margin: 5px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .wishlist-button button {
+        background-color: transparent;
+        border: none;
     }
 }

@@ -6,11 +6,14 @@ import EpicGamesLogo from '../assets/epic-games-logo.png'
 import DownloadEmote from '../assets/download-image.png'
 import EntranceEmote from '../assets/entrance-image.png'
 import GowLogo from '../assets/gow-logo.png'
+import PlusCircleEmote from '../assets/plus-circle.png'
+import RightArrowEmote from '../assets/right-arrow.png'
 
 const header = () => {
     return (
         <div className="header-container">
-
+            
+            {/* UPPER MENU */}
             <div className="container">
                 <div className="epicGamesLogo">
                     <img src={EpicGamesLogo} alt="logo" />
@@ -88,6 +91,8 @@ const header = () => {
 
                 </div>
             </div>
+
+            {/* HORIZONTAL LINE BETWEEN GOW CONTENT AND UPPER MENU*/}
             <hr></hr>
 
             {/* MAIN GAME CONTENT IN THE MIDDLE OF PAGE*/}
@@ -98,6 +103,26 @@ const header = () => {
                     <label>God of War é uma série de jogos eletrônicos de ação e aventura baseada nas mitologias grega e nórdica. Estreando em 2005, a série tornou-se um título emblemático para a marca PlayStation, e Kratos é um dos seus personagens mais populares.
 
                     </label>
+                </div>
+            </div>
+
+            {/* BUY or GO TO WISH LIST*/}
+            <div className="buy-wishlist-container">
+
+                {/* PRE-SALE BUTTON*/}
+                <div className="buy-pre-sale-button">
+                    <button class="btn btn-primary" type="button">
+                        <span>Compre na pré-venda</span>
+                        <img src={RightArrowEmote} alt="right-arrow"></img>
+                    </button>
+                </div>
+
+                {/* WISHLIST BUTTON*/}
+                <div className="wishlist-button">
+                    <button class="btn btn-primary" type="button">
+                        <img src={PlusCircleEmote} alt="plus-circle"></img>
+                        <span>Para a Lista de Desejos</span>
+                    </button>
                 </div>
             </div>
         </div>
