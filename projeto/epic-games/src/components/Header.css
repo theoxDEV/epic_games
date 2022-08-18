@@ -1,0 +1,161 @@
+html,
+body {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+}
+
+.header-container {
+    min-height: 100%;
+    min-width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/gow-background.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+
+.right-container {
+    display: flex;
+    padding: 0;
+    align-items: center;
+}
+
+.right-container button {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 1em;
+    height: 2.5em;
+}
+
+.right-container img {
+    width: 1em;
+    height: 1em;
+    margin-right: 5px;
+}
+
+.start-session-button button {
+    background-color: transparent;
+    border-color: white;
+    border-width: 2px;
+}
+
+.epicGamesLogo img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    background: transparent;
+    margin: auto;
+}
+
+.buttons button {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+}
+
+.unrealEngine button {
+    margin: auto;
+    padding: 0.4em;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 0.1ch;
+    background-color: gray;
+}
+
+.gow-content {
+    margin-right: 25em;
+    margin-top: 10em;
+}
+
+.gow-logo-image {
+    width: 25em;
+    padding: 1em;
+    margin-left: 10px;
+}
+
+.gow-content-description {
+    padding: 0;
+    margin: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.gow-content-description label {
+    padding: 1em;
+    color: #ffffff;
+    top: 50%;
+    left: 20%;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: Verdana;
+}
+
+@media (max-width: 1200px) {
+
+    .header-container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        margin:0 auto;
+    }
+
+    .epicGamesLogo {
+        left: 10%;
+        position: fixed;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .right-container {
+        right: 10%;
+        position: fixed;
+        height: 4.5em;
+    }
+
+    .download-epic-button {
+        display: none;
+    }
+
+    .gow-content {
+        top: 50%;
+        left: 50%;
+    }
+
+    .gow-content-description {
+        align-items: center;
+    }
+
+    .gow-content-description label {
+        padding: 0;
+        margin: 0;
+        color: #dbdbdb;
+    }
+
+    .gow-logo-image {
+        padding: 0;
+        margin: 0;
+    }
+}
