@@ -16,8 +16,8 @@ body {
 
 
 .right-container {
-    display: flex;
     padding: 0;
+    display: flex;
     align-items: center;
 }
 
@@ -40,6 +40,10 @@ body {
     background-color: transparent;
     border-color: white;
     border-width: 2px;
+}
+
+.start-session-button img {
+    filter: invert(100%);
 }
 
 .epicGamesLogo img {
@@ -77,38 +81,56 @@ hr {
     background-color: gray;
 }
 
+/* GOD OF WAR CONTENT*/
+
 .gow-content {
-    margin-right: 25em;
-    margin-top: 10em;
+    margin-left: 20%;
+    margin-top: 10%;
 }
 
 .gow-logo-image {
     width: 25em;
     padding: 1em;
-    margin-left: 10px;
 }
 
 .gow-content-description {
     padding: 0;
-    margin: 10px;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 55vh;
 }
 
 .gow-content-description label {
     padding: 1em;
-    color: #ffffff;
+    color: #cccccc;
     top: 50%;
     left: 20%;
-    text-align: justify;
+    text-align: left;
     text-justify: inter-word;
     font-family: Verdana;
 }
 
+/* ALIGN IMG AND SPAN TO CENTER*/
+.buy-wishlist-container {
+    justify-content: center;
+    align-items: center;
+    margin-left: 21%;
+}
+
+.buy-wishlist-container button {
+    display: inline;
+}
+
+.buy-wishlist-container img {
+    filter: invert(100%);
+    width: 10px;
+    margin: 5px;
+}
+
+.buy-wishlist-container span {
+}
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 660px) {
 
     .header-container {
         margin: 0;
@@ -126,7 +148,7 @@ hr {
         position: fixed;
     }
 
-    /* .button just works in desktop resolution*/
+    /* .button only appears in desktop resolution*/
 
     .buttons {
         display: none;

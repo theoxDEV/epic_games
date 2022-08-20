@@ -3,19 +3,10 @@ import React from 'react'
 // CSS
 import './GamesContent.css'
 
-const GamesContent = () => {
+const GamesContent = ({ game }) => {
     return (
-        <div className="container">
-            <div className="games-on-sale">
-                <span>Jogos em promoção</span>
-                
-                {/* TOPNAV*/}
-                
-
-
-            </div>
-        </div>
+        <div></div>
     )
 }
 
-export default GamesContent
+export default GamesContent;
