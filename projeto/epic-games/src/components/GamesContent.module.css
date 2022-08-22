@@ -1,0 +1,86 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: #fff;
+}
+
+/* GAMES FILTERS*/
+.listHeader {
+    display: inline-flex;
+    background-color: transparent;
+    align-items: center;
+
+}
+
+.listHeader ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.listHeader li {
+    float: left;
+}
+
+.listHeader li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+.listHeader li a:hover {
+    box-shadow: inset 0 -1px 0 0 rgb(36, 36, 255);
+}
+
+.listHeader {
+    color: white;
+    justify-content: center;
+    text-align: justify;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+}
+
+
+/* EACH GAME LIST */
+.eachGame {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+}
+
+
+
+.eachGame span {
+    display: block;
+}
+
+.eachGame img {
+    width: 176px;
+    height: 235px;
+}
+
+
+/*.eachGame {
+    display: inline;
+}
+
+.eachGame img {
+    width: 176px;
+    height: 235px;
+    padding: 5%;
+}
+
+.eachGame span {
+    padding: 5%;
+    display: flex;
+    font-size: 15px;
+    color: white;
+}*/

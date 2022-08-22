@@ -1,3 +1,4 @@
+// CSS
 import './App.css';
 
 // Components
@@ -21,9 +22,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {gamesOnSale.map((game) => (
-        <GamesContent game={game} />
-      ))}
+      <GamesContent gamesCollection={gamesOnSale} />
     </div>
   );
 }
